@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu primeiro site em repoositório</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="media-query.css">
+    <!-- <link href="{% static 'css/style.css' %}" rel="stylesheet"> -->
 </head>
+
 <body>
-    <h1>Olá Mundo!</h1>
-    <hr>
-    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Asperiores in, non nobis tempora unde facilis, fugit explicabo esse, perferendis suscipit eaque nesciunt nostrum dolor harum quaerat? Temporibus nobis ut aspernatur.</p>
+    <header>
+        <h1>IA Identificadora de Insetos</h1>
+        <nav class="navbar">
+            <a href="#">IFMS</a>
+            <a href="#">Contato</a>
+            <a href="#">Saiba Mais</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <main>
+            <div class="imagem"></div>
+            <div class="formulario">
+                <h1>Crie Sua Conta</h1>
+                <p>Para utilizar a IA detectora de insetos, <br> é preciso que você crie uma conta.</p>
+                <form class="formulario" action="/submit" method="post">
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="password" name="password" placeholder="Senha" required> <br>   
+                    <button type="submit">Criar Conta</button>
+                </form>
+            </div>
+        </main>
+    </div>
+
+    <footer id="sidebar">
+            <p>Place Holder</p>
+    </footer>
+    <script>
+        document.getElementById('sidebar').addEventListener('click', function() {
+            this.classList.toggle('open');
+        });
+    </script>
 </body>
+
 </html>

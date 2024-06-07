@@ -1,0 +1,138 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: Corbel;
+    src: url('../../templates/usuarios/fontes/corbel.ttf');
+}
+
+body, html{
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to bottom right, #D9CFC1, #EEE3AB);
+}
+
+header{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 50px;
+    background-image: linear-gradient(to bottom, #c061f3, #ea7cee);
+    color: white;
+    box-shadow: 0px .4px 10px rgba(0, 0, 0, 0.322);
+}
+header > h1{
+    display: inline-block;
+    font-family: Corbel, Arial, Helvetica, sans-serif;
+    width: 380px;
+    color: white;
+    margin: 5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.616);
+}
+
+nav{
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    background-color: #f5f5f500;
+    padding: 10px;
+    margin: 5px;
+}
+nav > a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+nav > a:hover{
+    background-color: #ecaeee;
+    color: #ed39f3;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 150px);
+}
+
+main{
+    display: flex;
+    width: 800px;
+    height: 400px;
+    background-color: lightgray;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.479);
+}
+
+.imagem{
+    flex: 1;
+    background-image: url('test.jpg');
+    background-size: cover;
+} /* TENHO QUE TERMINAR DE CONFIGURAR A IMAGEM */
+
+.formulario{
+    flex: 2;
+    text-align: center;
+}
+main h1 {
+    font-family: Corbel, Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    margin: 10px 0px;
+    color: #e673f5;
+}
+main p {
+    font-size: 20px;
+    font-family: Corbel, Arial, Helvetica, sans-serif;
+    margin: 10px 0px 20px 0px;
+    color: #777F84;
+}
+input {
+    width: 85%;
+    padding: 12px 20px;
+    margin: 5px 0px;
+    background-color: #FBFBFB;
+    border-radius: 30px;
+    border: 3px solid #C773F5;
+}
+button {
+    display: inline-block;
+    color: white;
+    width: 120px;
+    padding: 12px 20px;
+    margin: 16px 4px;
+    background-color: #C773F5;
+    border-radius: 30px;
+    border: 0px;
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px 1px 1px #5b3572;
+}
+button:hover {
+    background-color: #cd80f7fd;
+}
+button:active {
+    box-shadow: 0 0 0 0 #422652, inset 1.5px 1.5px 1px 1px #5b3572;
+    transform: translate(2px, 2px);
+}
+
+
+footer {
+    background-image: linear-gradient(to bottom right, #C773F5, #F173F5);
+    position: fixed;
+    bottom: -300px;
+    width: 100%;
+    height: 400px;
+    cursor: pointer;
+    transition: transform 1s ease;
+}
+#sidebar.open {
+    transform: translateY(-300px); /* Ajuste conforme necessário */
+}
+footer > p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    text-align: center;
+}
