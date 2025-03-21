@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (max-width: 650px){
+@media screen and (max-width: 950px){
     header{
         text-align: center;
         background-image: none;
